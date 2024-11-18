@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dictionary</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="search">
+    <input type="text" id="search" placeholder="Search..." onkeyup="filterEntries()">
+    </div>
+    <div class="container">
+        <h1>English-Hungarian Dictionary</h1>
+        <div class="dictionary-entry">
+            <h2 class="word">Example</h2>
+            <p class="definition">A representative form or pattern.</p>
+            <p class="translation">Hungarian Translation: Példa</p>
+        </div>
+        <div class="dictionary-entry">
+            <h2 class="word">Agile</h2>
+            <p class="definition">A project management methodology focused on iterative development and collaboration.</p>
+            <p class="translation">Hungarian Translation: Agilis</p>
+        </div>
+        <div class="dictionary-entry">
+            <h2 class="word">API Gateway</h2>
+            <p class="definition">A server that acts as an API front-end, receiving API requests and enforcing security policies.</p>
+            <p class="translation">Hungarian Translation: API átjáró</p>
+        </div>
+        <div class="dictionary-entry">
+            <h2 class="word">Analytics</h2>
+            <p class="definition">The systematic computational analysis of data or statistics to gain insights.</p>
+            <p class="translation">Hungarian Translation: Analitika</p>
+        </div>
+        <div class="dictionary-entry">
+            <h2 class="word">Bit</h2>
+            <p class="definition">The smallest unit of data in a computer, represented as either a 0 or a 1.</p>
+            <p class="translation">Hungarian Translation: Bit</p>
+        </div>
+        <div class="dictionary-entry">
+            <h2 class="word">Byte</h2>
+            <p class="definition">A unit of digital information that consists of 8 bits.</p>
+            <p class="translation">Hungarian Translation: Byte</p>
+        </div>
+        <div class="dictionary-entry">
+            <h2 class="word">Cache</h2>
+            <p class="definition">A hardware or software component that stores data so future requests for that data can be served faster.</p>
+            <p class="translation">Hungarian Translation: Gyorsítótár</p>
+        </div>
+        <div class="dictionary-entry">
+            <h2 class="word">Chatbot</h2>
+            <p class="definition">An AI program that simulates human conversation through text or voice interactions.</p>
+            <p class="translation">Hungarian Translation: Chatbot</p>
+        </div>
+        <div class="dictionary-entry">
+            <h2 class="word">Client</h2>
+            <p class="definition">A computer or program that requests services from a server.</p>
+            <p class="translation">Hungarian Translation: Kliens</p>
+        </div>
+        <div class="dictionary-entry">
+            <h2 class="word">Cloud Computing</h2>
+            <p class="definition">The delivery of computing services over the internet, including storage, processing, and networking.</p>
+            <p class="translation">Hungarian Translation: Felhőalapú számítástechnika</p>
+        </div>
+        <div class="dictionary-entry">
+            <h2 class="word">Containerization</h2>
+            <p class="definition">A method of virtualization that allows applications to run in isolated environments called containers.</p>
+            <p class="translation">Hungarian Translation: Konténerizálás</p>
+        </div>
+        <div class="dictionary-entry">
+            <h2 class="word">Data Center</h2>
+            <p class="definition">A facility used to house computer systems and associated components, such as telecommunications and storage systems.</p>
+            <p class="translation">Hungarian Translation: Adatközpont</p>
+        </div>
+        <div class="dictionary-entry">
+            <h2 class="word">Data Mining</h2>
+            <p class="definition">The practice of examining large datasets to uncover hidden patterns or insights.</p>
+            <p class="translation">Hungarian Translation: Adatbányászat</p>
+        </div>
+        <div class="dictionary-entry">
+            <h2 class="word">Deep Learning</h2>
+            <p class="definition">A subset of machine learning that uses neural networks with many layers to analyze various factors of data.</p>
+            <p class="translation">Hungarian Translation: Mélytanulás</p>
+        </div>
+        <div class="dictionary-entry">
+            <h2 class="word">DevOps</h2>
+            <p class="definition">A set of practices that combines software development (Dev) and IT operations (Ops) to shorten the systems development life cycle.</p>
+            <p class="translation">Hungarian Translation: DevOps</p>
+        </div>
+        <div class="dictionary-entry">
+            <h2 class="word">Encryption</h2>
+            <p class="definition">The process of converting information or data into a code to prevent unauthorized access.</p>
+            <p class="translation">Hungarian Translation: Titkosítás</p>
+        </div>
+        <div class="dictionary-entry">
+            <h2 class="word">Facial Recognition</h2>
+            <p class="definition">A technology capable of identifying or verifying a person from a digital image or video frame.</p>
+            <p class="translation">Hungarian Translation: Arcfelismerés</p>
+        </div>
+        <div class="dictionary-entry">
+            <h2 class="word">Firewall</h2>
+            <p class="definition">A network security system that monitors and controls incoming and outgoing network traffic based on security rules.</p>
+            <p class="translation">Hungarian Translation: Tűzfal</p>
+        </div>
+        <div class="dictionary-entry">
+            <h2 class="word">Firmware</h2>
+            <p class="definition">A specific class of computer software that provides the low-level control for a device's specific hardware.</p>
+            <p class="translation">Hungarian Translation: Firmware</p>
+        </div>
+        <div class="dictionary-entry">
+            <h2 class="word">Git</h2>
+            <p class="definition">A distributed version control system used to track changes in source code during software development.</p>
+            <p class="translation">Hungarian Translation: Git</p>
+        </div>
+        <div class="dictionary-entry">
+            <h2 class="word">GitHub</h2>
+            <p class="definition">A web-based platform for version control using Git, allowing collaboration on software development.</p>
+            <p class="translation">Hungarian Translation: GitHub</p>
+        </div>
+        <div class="dictionary-entry">
+            <h2 class="word">HTML</h2>
+            <p class="definition">Hypertext Markup Language; the standard markup language used for creating web pages.</p>
+            <p class="translation">Hungarian Translation: HTML</p>
+        </div>
+        <div class="dictionary-entry">
+            <h2 class="word">Incident Response</h2>
+            <p class="definition">The approach taken to manage the aftermath of a security breach or cyberattack.</p>
+            <p class="translation">Hungarian Translation: Incidens válasz</p>
+        </div>
+        <div class="dictionary-entry">
+            <h2 class="word">Infrastructure as Code (IaC)</h2>
+            <p class="definition">Managing and provisioning computer data centers through machine-readable definition files, rather than physical hardware configuration.</p>
+            <p class="translation">Hungarian Translation: Infrastruktúra kód formájában</p>
+        </div>
+        <div class="dictionary-entry">
+            <h2 class="word">Integration</h2>
+            <p class="definition">The process of combining different systems or software applications to work together.</p>
+            <p class="translation">Hungarian Translation: Integráció</p>
+        </div>
+        <div class="dictionary-entry">
+            <h2 class="word">Java</h2>
+            <p class="definition">A high-level programming language that is class-based and object-oriented, designed to have as few implementation dependencies as possible.</p>
+            <p class="translation">Hungarian Translation: Java</p>
+        </div>
+        <div class="dictionary-entry">
+            <h2 class="word">JavaScript</h2>
+            <p class="definition">A high-level programming language commonly used to create interactive effects within web browsers.</p>
+            <p class="translation">Hungarian Translation: JavaScript</p>
+        </div>
+        <div class="dictionary-entry">
+            <h2 class="word">Knowledge Base</h2>
+            <p class="definition">A centralized repository for information and knowledge management, often used in support and documentation.</p>
+            <p class="translation">Hungarian Translation: Tudásbázis</p>
+        </div>
+        <div class="dictionary-entry">
+            <h2 class="word">Kubernetes</h2>
+            <p class="definition">An open-source platform for automating the deployment, scaling, and management of containerized applications.</p>
+            <p class="translation">Hungarian Translation: Kubernetes</p>
+        </div>
+        <div class="dictionary-entry">
+            <h2 class="word">Load Balancer</h2>
+            <p class="definition">A device that distributes network or application traffic across multiple servers to ensure no single server becomes overwhelmed.</p>
+            <p class="translation">Hungarian Translation: Terheléselosztó</p>
+        </div>
+        <div class="dictionary-entry">
+            <h2 class="word">Malware</h2>
+            <p class="definition">Malicious software designed to harm, exploit, or otherwise compromise a computer system.</p>
+            <p class="translation">Hungarian Translation: Rosszindulatú szoftver</p>
+        </div>
+        <div class="dictionary-entry">
+            <h2 class="word">Microservices</h2>
+            <p class="definition">An architectural style that structures an application as a collection of small, loosely coupled services.</p>
+            <p class="translation">Hungarian Translation: Mikroszolgáltatások</p>
+        </div>
+        <div class="dictionary-entry">
+            <h2 class="word">Natural Language Processing (NLP)</h2>
+            <p class="definition">A field of AI that enables computers to understand, interpret, and respond to human language in a valuable way.</p>
+            <p class="translation">Hungarian Translation: Természetes nyelvfeldolgozás</p>
+        </div>
+        <div class="dictionary-entry">
+            <h2 class="word">Network Security</h2>
+            <p class="definition">The practice of protecting a computer network from intruders, whether targeted attackers or opportunistic malware.</p>
+            <p class="translation">Hungarian Translation: Hálózati biztonság</p>
+        </div>
+        <div class="dictionary-entry">
+            <h2 class="word">Operating System</h2>
+            <p class="definition">Software that manages computer hardware and software resources and provides common services for computer programs.</p>
+            <p class="translation">Hungarian Translation: Operációs rendszer</p>
+        </div>
+        <div class="dictionary-entry">
+            <h2 class="word">Open Source</h2>
+            <p class="definition">Software with source code that is freely available for anyone to use, modify, and distribute.</p>
+            <p class="translation">Hungarian Translation: Nyílt forráskódú</p>
+        </div>
+        <div class="dictionary-entry">
+            <h2 class="word">Phishing Simulation</h2>
+            <p class="definition">An exercise that mimics phishing attacks to help organizations train employees in recognizing and responding to phishing attempts.</p>
+            <p class="translation">Hungarian Translation: Adathalászati szimuláció</p>
+        </div>
+        <div class="dictionary-entry">
+            <h2 class="word">Platform as a Service (PaaS)</h2>
+            <p class="definition">A cloud computing model that provides a platform allowing customers to develop, run, and manage applications without the complexity of building and maintaining infrastructure.</p>
+            <p class="translation">Hungarian Translation: Platform szolgáltatásként</p>
+        </div>
+        <div class="dictionary-entry">
+            <h2 class="word">Quality Assurance</h2>
+            <p class="definition">The process of ensuring that a product or service meets specified requirements and standards.</p>
+            <p class="translation">Hungarian Translation: Minőségbiztosítás</p>
+        </div>
+        <div class="dictionary-entry">
+            <h2 class="word">Query</h2>
+            <p class="definition">A request for data or information from a database.</p>
+            <p class="translation">Hungarian Translation: Lekérdezés</p>
+        </div>
+        <div class="dictionary-entry">
+            <h2 class="word">Repository</h2>
+            <p class="definition">A central location where data is stored and managed, often used in version control systems.</p>
+            <p class="translation">Hungarian Translation: Tárhely</p>
+        </div>
+        <div class="dictionary-entry">
+            <h2 class="word">Robotics</h2>
+            <p class="definition">The branch of technology that deals with the design, construction, operation, and use of robots.</p>
+            <p class="translation">Hungarian Translation: Robotika</p>
+        </div>
+        <div class="dictionary-entry">
+            <h2 class="word">SaaS (Software as a Service)</h2>
+            <p class="definition">A software distribution model in which applications are hosted by a service provider and made available to customers over the internet.</p>
+            <p class="translation">Hungarian Translation: Szoftver mint szolgáltatás</p>
+        </div>
+        <div class="dictionary-entry">
+            <h2 class="word">Scrum Master</h2>
+            <p class="definition">The person responsible for ensuring the team follows Agile practices and removes any obstacles in their way.</p>
+            <p class="translation">Hungarian Translation: Scrum mester</p>
+        </div>
+        <div class="dictionary-entry">
+            <h2 class="word">Token</h2>
+            <p class="definition">A piece of data that represents a user or an object, often used in authentication processes.</p>
+            <p class="translation">Hungarian Translation: Token</p>
+        </div>
+        <div class="dictionary-entry">
+            <h2 class="word">Two-Factor Authentication (2FA)</h2>
+            <p class="definition">A security process in which the user provides two different authentication factors to verify themselves.</p>
+            <p class="translation">Hungarian Translation: Kétfaktoros azonosítás</p>
+        </div>
+        <div class="dictionary-entry">
+            <h2 class="word">User Acceptance Testing (UAT)</h2>
+            <p class="definition">A phase of software development in which the end-users test the software to ensure it meets their needs and requirements.</p>
+            <p class="translation">Hungarian Translation: Felhasználói elfogadási tesztelés</p>
+        </div>
+        <div class="dictionary-entry">
+            <h2 class="word">User Experience (UX)</h2>
+            <p class="definition">The overall experience a user has when interacting with a product or service.</p>
+            <p class="translation">Hungarian Translation: Felhasználói élmény</p>
+        </div>
+        <div class="dictionary-entry">
+            <h2 class="word">VPN (Virtual Private Network)</h2>
+            <p class="definition">A service that encrypts your internet connection and hides your online activity from prying eyes.</p>
+            <p class="translation">Hungarian Translation: VPN (Virtuális magánhálózat)</p>
+        </div>
+        <div class="dictionary-entry">
+            <h2 class="word">Virtualization</h2>
+            <p class="definition">The creation of virtual versions of physical components, such as servers or storage devices.</p>
+            <p class="translation">Hungarian Translation: Virtualizáció</p>
+        </div>
+        <div class="dictionary-entry">
+            <h2 class="word">Web Browser</h2>
+            <p class="definition">Software application used to access and view websites on the internet.</p>
+            <p class="translation">Hungarian Translation: Web böngésző</p>
+        </div>
+        <div class="dictionary-entry">
+            <h2 class="word">Web Service</h2>
+            <p class="definition">A method of communication between two electronic devices over a network.</p>
+            <p class="translation">Hungarian Translation: Webszolgáltatás</p>
+        </div>
+        <div class="dictionary-entry">
+            <h2 class="word">XML</h2>
+            <p class="definition">eXtensible Markup Language; a markup language that defines rules for encoding documents in a format that is both human-readable and machine-readable.</p>
+            <p class="translation">Hungarian Translation: XML</p>
+        </div>
+        <div class="dictionary-entry">
+            <h2 class="word">XML-RPC</h2>
+            <p class="definition">A remote procedure call (RPC) protocol that uses XML to encode its calls and HTTP as a transport mechanism.</p>
+            <p class="translation">Hungarian Translation: XML-RPC</p>
+        </div>
+        <div class="dictionary-entry">
+            <h2 class="word">Yield</h2>
+            <p class="definition">The amount of product or result produced in relation to the resources used.</p>
+            <p class="translation">Hungarian Translation: Hozzáállás</p>
+        </div>
+        
+        
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
